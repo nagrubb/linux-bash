@@ -38,6 +38,6 @@ function op_creds {
   user=$(op get item $1 | jq '.details.fields[] | select(.designation=="username").value')
   pass=$(op get item $1 | jq '.details.fields[] | select(.designation=="password").value')
   echo "Username: $user"
-  echo $pass | xclip -sel clip
+  echo $pass | sed -e 's/^"//' -e 's/"$//' | xclip -sel clip
 }
 
