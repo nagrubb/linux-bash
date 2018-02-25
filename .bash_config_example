@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+declare -A config=()
+
+config["1PasswordSession"]="OP_SESSION_someaccount"
+config["1PasswordAccountName"]="someaccount.1password.com"
+config["1PasswordEmailAddress"]="email@somewhere.com"
+config["1PasswordSecretKey"]="1PASSWORD_MASTER_SECRET_KEY"
+
