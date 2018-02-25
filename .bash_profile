@@ -12,7 +12,7 @@ function op_check_session {
     op list users &> /dev/null
     
     if [ $? -ne 0 ]; then
-      unset OP_SESSION_natencate
+      unset ${!config["1PasswordSession"]}  
     fi
   fi
 
